@@ -37,7 +37,8 @@
 #define SEC_RATIO        100.00         // TUBE_SEL jumper to GND - SET FOR LND712
 
 // sample periods < 10 sec cause rounding errors (3 sec minimum))
-#define LONG_PERIOD      10000          // mS sample & display below 100 CPM
+// HG: increased sample period to 30s
+#define LONG_PERIOD      30000          // mS sample & display below 100 CPM
 #define SHORT_PERIOD     5000           // mS sample & display above 100 CPM
 #define FULL_SCALE       1000           // max CPM for 8 bars & overflow warning
 #define LOW_VCC          4200 //mV      // if Vcc < LOW_VCC give low voltage warning
